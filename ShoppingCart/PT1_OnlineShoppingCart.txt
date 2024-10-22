@@ -1,0 +1,107 @@
+Reminders:
+-	.h files are for  DEFINING the entire class as well as defining the class functions/class members (private or public)
+-	.cpp files are for DECLARING class functions
+
+
+// ItemToPurchase.cpp
+#include <iostream>
+#include <string>
+
+void ItemToPurchase::SetName(string name){
+// set the itemName to name
+}
+
+void ItemToPurchase::SetPrice(int price){
+// set the itemPrice to price
+}
+
+void ItemToPurchase::SetQuantity(int quantity){
+// set the itemQuantity to quantity
+}
+
+
+string ItemToPurchase::GetName() const {
+// return itemName
+}
+
+int ItemToPurchase::GetPrice() const {
+// return itemPrice
+}
+
+int ItemToPurchase::itemQuantity() const {
+// return itemQuantity
+}
+
+
+=====================================
+
+// ItemToPurchase.h
+
+-	Default constructor
+#include "ItemToPurchase.cpp"
+
+Class ItemToPurchase{
+	public:
+		//void SetName(string name);
+		//void SetPrice(int price);
+		//void SetQuantity(int quantity);
+		//string GetName() const;
+		//int GetPrice() const;
+		//int GetQuantity() const;
+		
+	private:
+		//string itemName = "none";
+		//int itemPrice = 0;
+		//int itemQuantity = 0;
+}
+
+=====================================
+
+// main.cpp
+#include "ItemToPurchase.h"
+
+ItemToPurchase item1;
+ItemToPurchase item2;
+string currName;
+int currPrice;
+int currQuantity;
+
+// Input for item 1
+cout << "Item 1" << endl;
+cout << "Enter the item name:" << endl;
+cin >> currName;
+// CALL SETNAME ON ITEM1
+
+cout << endl << "Enter the item price:" << endl;
+cin >> currPrice;
+// CALL SETPRICE ON ITEM1
+
+cout << endl << "Enter the item quantity:" << endl;
+cin >> currQuantity;
+// CALL SETQUANTITY ON ITEM1
+
+// Input for item 2
+cout << "Item 2" << endl;
+cout << "Enter the item name:" << endl;
+cin >> currName;
+// CALL SETNAME ON ITEM2
+
+cout << endl << "Enter the item price:" << endl;
+cin >> currPrice;
+// CALL SETPRICE ON ITEM2
+
+cout << endl << "Enter the item quantity:" << endl;
+cin >> currQuantity;
+cout << endl;
+// CALL SETQUANTITY ON ITEM2
+
+cout << "TOTAL COST" << endl;
+- print item1 name " " item1 quantity " @ $" item1 price " = $" (item1 quantity * item1 price) 
+- NEWLINE
+- print item2 name " " item2 quantity " @ $" item2 price " = $" (item2 quantity * item2 price) 
+- NEWLINE
+*/
+cout << "Total: $" << (item1 quantity * item1 price) + (item2 quantity * item2 price) 
+
+
+
